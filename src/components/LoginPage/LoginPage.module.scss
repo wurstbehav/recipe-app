@@ -1,0 +1,49 @@
+@import '../../defaultstyles/settings';
+
+.boxlayout {
+    background: url('/images/bg.jpg');
+    background-size: cover;
+    background-position: right 20% bottom 0%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $desktop-breakpoint) {
+        background-position: 0% 0%;
+        
+    }
+}
+
+.boxlayoutbox {
+    border-radius: 3px;
+    background: fade-out($color: (white), $amount: .15);
+    text-align: center;
+    width: 25rem;
+    padding: $l-size $m-size;
+}
+
+.boxlayouttitle {
+    margin: 0 0 $m-size 0;
+    margin-top: 2rem;
+    line-height: 1;
+}
+
+.button{
+    background-color: $blue;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: $font-size-large;
+    font-weight: 300;
+    padding: $s-size;
+    border:none;
+    transition: 0.3s;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .button:hover{
+    background-color: $dark-blue;
+  }

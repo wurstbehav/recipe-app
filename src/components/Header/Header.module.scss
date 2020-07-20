@@ -1,0 +1,39 @@
+@import '../../defaultstyles/settings';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.mainHeader {
+    background-color: #204051;
+}
+
+
+
+.title {
+    color: $off-white;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+}
+
+.button{
+    background-color: #1b262c;
+    color: white;
+    font-size: $font-size-small;
+    font-weight: 300;
+    padding: $s-size;
+    border:none;
+    border-radius: 1rem;
+    transition: 0.3s;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+.button:hover{
+    background-color: $dark-blue;
+  }
+  

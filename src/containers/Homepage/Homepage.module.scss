@@ -1,0 +1,53 @@
+@import '../../defaultstyles/settings';
+
+.content {
+    border-radius: 5px;
+    background: #3c718d;
+    margin: 5px 0px;
+    padding: 1.4rem;
+    transition: 0.4s all ease-in;
+  }
+
+  .recipeContent{     
+      color:white;
+  }
+  .content:hover{
+    background-color:#204051;
+}
+
+.button{
+    margin-top: 1rem;
+    background-color: #3d505a;
+    color: white;
+    font-size: $font-size-small;
+    font-weight: 300;
+    padding: $s-size;
+    border:none;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+.button:hover{
+    background-color: #295c77;
+  }
+
+.recipeSubText{
+    font-size: 1.2rem;
+    color: rgb(197, 195, 195);
+
+}  
+
+.recipePrimaryText{
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255); 
+    word-break: break-all; 
+}
+
+.recipeHeadText{
+    color:#295c77;
+    font-size: 1.9rem;
+}
+

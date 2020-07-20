@@ -1,0 +1,60 @@
+@import '../../defaultstyles/settings';
+
+
+.pageHeader{
+    padding: $l-size 0;
+    text-align: center;
+    background-color: $off-white;
+}
+
+
+.mainSection {
+    padding-top: $l-size;
+}
+
+.errorMessagebottom{
+    font-weight: bold;
+    color: #ff9966;
+    font-size: $s-size;
+    margin-bottom: 3rem;
+}
+
+.successMessage{
+    color: rgb(65, 105, 65);
+    font-weight: bold;
+}
+
+.addRecipeButton{
+    margin-top:3.5rem ;
+    margin-bottom: 2rem;
+    background-color: #3d505a;
+    color: white;
+    font-size: $font-size-small;
+    font-weight: 300;
+    padding: $s-size;
+    border:none;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover{  
+        background-color: #1b262c;
+    }
+ &:disabled{
+     background-color: rgb(190, 190, 190);
+     color: rgb(102, 101, 101);
+     cursor:not-allowed ;
+ }
+}
+
+.addRecipeHeader{
+    background-color: #f4f3f3;
+}
+
+
+
+
+.additionalInfo{
+    max-width: 20rem;
+}

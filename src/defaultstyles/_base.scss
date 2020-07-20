@@ -1,0 +1,122 @@
+@import './settings';
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $dark-grey;
+    font-family: 'Roboto', sans-serif;
+    font-size: $m-size;
+    line-height: 1.6;
+    background-color: $off-white;
+}
+
+button{
+cursor: pointer;
+}
+
+button:disabled{
+    cursor: default;
+}
+
+.is-active{
+font-weight: bold;
+}
+
+
+  .content-container {
+    margin: 0 auto;
+    padding: 0 $m-size;
+    max-width: 80rem;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color:white;
+    background: #204051;
+  }
+  
+  ::selection {
+    color:white;
+    background: #204051;
+  }
+
+  .pageHeaderTitle{
+    font-weight: 300;
+    font-size: 4rem;
+    margin: 0 auto;
+    padding: 0 $m-size;
+    max-width: 80rem;
+    }
+
+    .pageHeader{
+      padding: $l-size 0;
+      text-align: center;
+      background-color: $off-white;
+  }
+
+  .head{
+    margin: $l-size 0 $s-size ;
+    background-color: #1a4156;
+    padding: 0.6rem;
+    text-align: center;
+    max-width: 10rem;
+    color: white;
+    font-weight: 300;
+    transition: 0.3s all ease-in;
+    cursor:context-menu;
+    border-radius: 1rem;
+    &:hover{  
+        background-color: #1b262c;
+    }
+    
+}
+
+.inputFields {
+  width: 100%;
+  max-width: 63rem;
+}
+
+.Deletebutton{
+  background-color: #b44a47;
+  color: white;
+  font-size: 1rem;
+  display: inline-block;
+  font-weight: 300;
+  padding: $s-size;
+  border:none;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+      background-color: #af1611; 
+  }
+
+}
+
+.buttonAdd{
+  background-color: #3c718d;
+  padding: $s-size $m-size;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  &:hover{
+      background-color: #003856; 
+  }
+  @media (min-width: $desktop-breakpoint) {
+    
+    margin-left: 3.2rem;
+     
+}
+}
+
+.additionalInfo{
+  max-width: 20rem;
+}

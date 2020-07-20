@@ -1,0 +1,150 @@
+@import '../../defaultstyles/settings';
+
+.mainSection {
+    padding-top: $l-size;
+    position: relative;
+}
+
+.editPageHeader{
+    background-color: #f9f6f7;
+}
+
+.DeleteAll{
+    display:none;
+
+    @media (min-width: $desktop-breakpoint) {
+        display: inline-block;
+        font-size: 1.3rem;
+        background-color: rgb(158, 52, 52);
+        margin-left: 66rem;
+        font-size: 1.6rem;
+        margin-top: 0rem;
+    }
+
+
+    &:hover{
+        background-color: rgb(144, 17, 17);
+    }
+}
+
+
+.changesMessage{
+    position: absolute;
+    top: 0;
+    right: 0;  
+    margin: 0.6rem 0; 
+    font-size: 1.2rem;
+    margin-right: 1.6rem; 
+    font-weight: 400;
+    color: #20a073;
+    @media (min-width: $desktop-breakpoint) {
+        font-size: 1.3rem;
+         
+    }
+}
+
+.errorMessage{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgb(170, 46, 46);
+    @media (min-width: $desktop-breakpoint) {
+        font-size: $font-size-small;
+         
+    }
+}
+
+.saveChanges{
+    font-size: 1.4rem;
+    background-color: #406579;
+    transition: 0.3s all ease-in ;
+    margin-bottom: 1rem;
+    &:hover{
+        background-color: #063853;
+    }
+    &:disabled{
+        background-color: rgb(190, 190, 190);
+        color: rgb(102, 101, 101);
+        cursor:not-allowed ;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+        margin-bottom: 2rem;
+         
+    }
+}
+
+.deleteAllMobileOnly{
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    @media (min-width: $desktop-breakpoint) {
+        display: none;
+         
+    }
+}
+
+.DangerZone{
+    color: rgb(158, 25, 25);
+    font-size: 2rem;
+    margin-top: 2rem;
+    @media (min-width: $desktop-breakpoint) {
+        display: none;
+         
+    }
+}
+
+.buttonOFDilog{
+    background-color: $blue;
+    color: white;
+    font-size: $font-size-large;
+    font-weight: 300;
+    padding: $s-size;
+    border:none;
+    transition: 0.3s;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .buttonOFDilog:hover{
+    background-color: $dark-blue;
+  }
+  
+
+  .buttonCancel{
+    background-color: #207561;
+    margin-right: $s-size;
+    border-radius: 3px;
+  }
+  
+  .buttonCancel:hover{
+    background-color:#06623b;
+    filter: drop-shadow(0 2px 3px #27496d);
+  }
+  
+  .buttonConfirm{
+    background-color: #9a1f40;
+    border-radius: 3px;
+  }
+  
+  .buttonConfirm:hover{
+    background-color: #8b2222;
+    filter: drop-shadow(0 2px 5px #893645);
+  }
+
+  .saveChangesButton{
+    background-color: rgb(238, 150, 17); 
+    &:hover {
+        background-color: rgb(255, 153, 0); 
+        filter: drop-shadow(0 2px 3px #cf6d10);
+    }
+  }
+
+
+
+  .additonalSection{
+    @media (min-width: $desktop-breakpoint) {
+        margin-left: 2.5rem;
+    }
+     
+  }
