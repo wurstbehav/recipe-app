@@ -2,6 +2,7 @@
 
 .titleText {
     padding: $l-size 0;
+    padding-top: $s-size;
     background-color: #f1f1f1;
 
 }
@@ -13,7 +14,7 @@
     @media (min-width: $desktop-breakpoint) {
       display: flex; 
       align-items: flex-end; 
-      justify-content: space-between
+      justify-content: space-between;
   }
 
 }
@@ -58,15 +59,8 @@
     
   }
 
-  .steps {
-    margin: 1.2rem;
-     color: #393e46;
-     width: 90%;
-    
-  }
-
   .editPage{
-    background-color: rgb(30, 61, 98);
+    background-color: #336d88;
       max-width: 13rem;
       border-radius: 1rem;
       padding: 0.8rem 1rem;
@@ -76,4 +70,5 @@
       &:hover{
         background-color:   #2c4553;
     }
+
     }

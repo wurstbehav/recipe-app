@@ -9,7 +9,6 @@ import WhatshotIcon from '@material-ui/icons/Whatshot';
 import Card from '@material-ui/core/Card';
 import ingredients from '../../assets/ingredients.png'
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import SwapHorizontalCircleIcon from '@material-ui/icons/SwapHorizontalCircle';
 import EditIcon from '@material-ui/icons/Edit';
 
@@ -67,7 +66,7 @@ const RecipePage = ({ match, history }) => {
 
 
 
-                <Card style={{ backgroundColor: '#f1f1f1', margin: '2rem 0' }} className={styles.card}>
+                <Card style={{ backgroundColor: '#f1f1f1', margin: '3rem 0' }} className={styles.card}>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         <img src={ingredients} alt="ingredient" style={{ marginLeft: '1.2rem', width: '3rem' }} />
                         <h1 style={{ margin: '1rem', fontWeight: '300', borderBottom: '1px solid #295c77' }}>Ingredients</h1>
@@ -76,7 +75,7 @@ const RecipePage = ({ match, history }) => {
                         recipe.recipeData.recipeIngredients && recipe.recipeData.recipeIngredients.map((recipeIngredient, i) =>
                             <div key={i + 1} style={{ display: 'flex', alignItems: 'center' }} >
                                 <ArrowRightIcon style={{ color: '#295c77', marginLeft: '1.2rem' }} />
-                                <p style={{ margin: '1.2rem', color: '#393e46' }}>
+                                <p style={{ margin: '0.8rem', color: '#393e46' }}>
                                     {recipeIngredient}
                                 </p>
                             </div>
@@ -96,8 +95,8 @@ const RecipePage = ({ match, history }) => {
                     {
                         recipe.recipeData.recipeSteps && recipe.recipeData.recipeSteps.map((step, i) =>
                             <div key={i + 1} style={{ display: 'flex', alignItems: 'center' }}>
-                                <FiberManualRecordIcon style={{ color: '#295c77', marginLeft: '1.9rem', fontSize: '1rem' }} />
-                                <p className={styles.steps}>
+                                 <ArrowRightIcon style={{ color: '#295c77', marginLeft: '1.2rem' }} />
+                                <p style={{ margin: '0.8rem', color: '#393e46' }}>
                                     {step}
                                 </p>
                             </div>
